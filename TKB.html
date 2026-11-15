@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نقشه راه پروژه «تاجر خودت باش»</title>
+    <!-- لود فونت استاندارد فارسی وزیرمتن -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-soft: #eff6ff;
+            --border-color: #e2e8f0;
+            --code-bg: #0f172a;
+            --code-color: #38bdf8;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Vazirmatn', Tahoma, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.85;
+            padding: 30px 15px;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .main-header {
+            text-align: center;
+            border-top: 5px solid var(--primary);
+            padding: 35px 25px;
+        }
+
+        h1 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-soft);
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-size: 1rem;
+            color: #334155;
+        }
+
+        ul, ol {
+            margin-right: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        .status {
+            display: inline-block;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f1f5f9;
+            color: #d97706;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            direction: ltr;
+            display: inline-block;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            color: var(--code-color);
+            padding: 16px 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            direction: ltr;
+            text-align: left;
+            font-family: Consolas, 'Fira Code', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 12px 0 16px 0;
+        }
+
+        .checklist-item {
+            list-style: none;
+            margin-right: 0;
+            font-size: 1.02rem;
+            padding: 4px 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px dashed var(--border-color);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- عنوان اصلی -->
+    <header class="section-card main-header">
+        <h1>نقشه راه پروژه «تاجر خودت باش»</h1>
+    </header>
+
+    <!-- 1. معرفی پروژه -->
+    <section class="section-card">
+        <h2>1. معرفی پروژه</h2>
+        <p>هدف پروژه ساخت یک دستیار هوشمند فروش و مدیریت کسب‌وکار است که بتواند اطلاعات سیستم منطق را دریافت کند، درخواست مشتریان را تحلیل کند و فرآیند فروش را هوشمندتر و سریع‌تر نماید.</p>
+        <p>منبع اصلی اطلاعات:</p>
+        <ul>
+            <li>نرم‌افزار منطق</li>
+            <li>وب‌سرویس‌های منطق (API)</li>
+            <li>اطلاعات مشتریان</li>
+            <li>اطلاعات کالا، قیمت، موجودی و سفارش‌ها</li>
+        </ul>
+    </section>
+
+    <!-- فاز صفر -->
+    <section class="section-card">
+        <h2>فاز صفر: آماده‌سازی و مستندسازی</h2>
+        <div class="status">وضعیت: ✅ انجام شده</div>
+        <p>کارهای انجام شده:</p>
+        <ul>
+            <li>ایجاد پوشه اصلی پروژه: <code>tajerkhodetbash</code></li>
+        </ul>
+        <pre><code>01_Documents
+02_Sourcecode
+03_Webservice
+04_Database
+05_Images
+06_Automation
+07_CRM
+08_Backup
+09_Releases</code></pre>
+        <ul>
+            <li>ایجاد فایل‌های اصلی:</li>
+        </ul>
+        <pre><code>README.md
+Vision.md
+RoadMap.md
+API_Notes.md
+Project_journal.md</code></pre>
+    </section>
+
+    <!-- فاز یک -->
+    <section class="section-card">
+        <h2>فاز یک: شناخت سیستم منطق و وب‌سرویس</h2>
+        <div class="status">وضعیت: شروع</div>
+        <p>اهداف:</p>
+        <ul>
+            <li>بررسی ساختار API منطق</li>
+            <li>ثبت تمام سرویس‌ها</li>
+            <li>تست ارتباط با سرور</li>
+            <li>شناخت پارامترهای ورودی و خروجی</li>
+        </ul>
+        <p>موارد مورد بررسی:</p>
+        <ul>
+            <li>Login API</li>
+            <li>اطلاعات شعب</li>
+            <li>اطلاعات کالا</li>
+            <li>قیمت‌ها</li>
+            <li>مشتریان</li>
+            <li>سفارش‌ها</li>
+            <li>موجودی</li>
+        </ul>
+        <p>خروجی این مرحله:</p>
+        <p>یک مستند کامل در:</p>
+        <p><code>API_Notes.md</code></p>
+    </section>
+
+    <!-- فاز دو -->
+    <section class="section-card">
+        <h2>فاز دو: اتصال به سیستم منطق</h2>
+        <p><strong>هدف:</strong></p>
+        <p>ایجاد ارتباط بین سیستم ما و وب‌سرویس منطق.</p>
+        <p>کارها:</p>
+        <ul>
+            <li>ایجاد محیط آزمایش</li>
+            <li>تنظیم آدرس API</li>
+            <li>تست ورود</li>
+            <li>دریافت اطلاعات اولیه</li>
+            <li>مدیریت خطاها</li>
+        </ul>
+    </section>
+
+    <!-- فاز سه -->
+    <section class="section-card">
+        <h2>فاز سه: ساخت هسته اطلاعاتی</h2>
+        <p><strong>هدف:</strong></p>
+        <p>ایجاد یک لایه اطلاعاتی برای تحلیل.</p>
+        <p>شامل:</p>
+        <ul>
+            <li>کالاها</li>
+            <li>مشتریان</li>
+            <li>قیمت‌ها</li>
+            <li>فروش‌ها</li>
+            <li>سوابق خرید</li>
+        </ul>
+    </section>
+
+    <!-- فاز چهار -->
+    <section class="section-card">
+        <h2>فاز چهار: هوش فروش</h2>
+        <p><strong>هدف:</strong></p>
+        <p>ساخت بخش تحلیل هوشمند.</p>
+        <p>قابلیت‌ها:</p>
+        <ul>
+            <li>پاسخ به سوالات فروشندگان</li>
+            <li>پیشنهاد کالا</li>
+            <li>تحلیل رفتار مشتری</li>
+            <li>بررسی قیمت‌ها</li>
+            <li>تشخیص مشتریان مهم</li>
+        </ul>
+    </section>
+
+    <!-- فاز پنج -->
+    <section class="section-card">
+        <h2>فاز پنج: اتصال واتساپ</h2>
+        <p><strong>هدف:</strong></p>
+        <p>ایجاد کانال ارتباط مستقیم با مشتری.</p>
+        <p>قابلیت‌ها:</p>
+        <ul>
+            <li>دریافت پیام مشتری</li>
+            <li>تشخیص نیاز مشتری</li>
+            <li>بررسی موجودی و قیمت</li>
+            <li>پاسخ خودکار</li>
+            <li>ثبت درخواست فروش</li>
+        </ul>
+    </section>
+
+    <!-- فاز شش -->
+    <section class="section-card">
+        <h2>فاز شش: مدیریت چند مشتری همزمان</h2>
+        <p><strong>هدف:</strong></p>
+        <p>ایجاد سیستم پاسخگویی همزمان.</p>
+        <p>توانایی مورد انتظار:</p>
+        <ul>
+            <li>پاسخ به چندین مشتری در یک زمان</li>
+            <li>حفظ تاریخچه گفتگو</li>
+            <li>جلوگیری از اشتباه بین مشتریان</li>
+            <li>اولویت‌بندی درخواست‌ها</li>
+        </ul>
+    </section>
+
+    <!-- فاز هفت -->
+    <section class="section-card">
+        <h2>فاز هفت: نسخه عملیاتی</h2>
+        <p>در این مرحله سیستم آماده استفاده واقعی می‌شود.</p>
+        <p>شامل:</p>
+        <ul>
+            <li>کنترل دسترسی کاربران</li>
+            <li>گزارش‌ها</li>
+            <li>پشتیبان‌گیری</li>
+            <li>ثبت خطاها</li>
+            <li>بهبود سرعت</li>
+        </ul>
+    </section>
+
+    <!-- اصول پروژه -->
+    <section class="section-card">
+        <h2>اصول پروژه</h2>
+        <ol>
+            <li>ابتدا شناخت کامل سیستم منطق</li>
+            <li>سپس اتصال امن</li>
+            <li>سپس ساخت امکانات هوشمند</li>
+            <li>هر مرحله مستندسازی شود</li>
+            <li>هیچ اطلاعات مهمی بدون ثبت باقی نماند</li>
+        </ol>
+    </section>
+
+    <!-- وضعیت فعلی پروژه -->
+    <section class="section-card">
+        <h2>وضعیت فعلی پروژه</h2>
+        <p>تاریخ شروع مرحله جدید:<br>1405/05/08</p>
+        <p>وضعیت:</p>
+        <div style="margin-top: 10px;">
+            <div class="checklist-item">✅ ساختار پروژه آماده است</div>
+            <div class="checklist-item">✅ دسترسی به سیستم منطق گرفته شده</div>
+            <div class="checklist-item">✅ وب‌سرویس در دست بررسی است</div>
+            <div class="checklist-item">⬜ تست APIها</div>
+            <div class="checklist-item">⬜ ساخت اتصال اولیه</div>
+            <div class="checklist-item">⬜ طراحی هوش فروش</div>
+        </div>
+    </section>
+
+    <!-- ثبت تغییرات نقشه راه -->
+    <section class="section-card">
+        <h2>ثبت تغییرات نقشه راه</h2>
+        <p>نسخه 1.0<br>تاریخ: 1405/05/08</p>
+        <p>تغییرات:</p>
+        <ul>
+            <li>ایجاد ساختار اولیه پروژه</li>
+            <li>دریافت دسترسی سیستم منطق</li>
+            <li>شروع بررسی وب‌سرویس‌ها</li>
+            <li>آماده‌سازی مسیر اتصال هوش مصنوعی به سیستم فروش</li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
